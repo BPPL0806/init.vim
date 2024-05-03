@@ -21,12 +21,17 @@ endif
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs' 
 Plug 'ryanoasis/vim-devicons'
 Plug 'morhetz/gruvbox'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
+
+" Enable Toggleterm
+lua require("toggleterm").setup()
+set hidden
 
 " Set gruvbox colorscheme
 colorscheme gruvbox
@@ -58,9 +63,15 @@ if has('clipboard')
 endif
 
 
+let mapleader = ","
+
 " Map <S-p> to paste from system clipboard
 nnoremap <silent> <S-p> "+p
 vnoremap <silent> <S-p> "+p
 
 " Map <S-tab> to toggle NERDTree
 nmap <silent> <S-tab> :NERDTreeToggle<CR>
+
+" Map <S-t> to toggle terminal
+nnoremap <silent> <S-t> :ToggleTerm <CR>
+tnoremap <silent> <S-t> <C-\><C-n>:ToggleTerm<CR>
