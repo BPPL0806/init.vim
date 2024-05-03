@@ -8,10 +8,12 @@
 4. [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons) - Nerd Tree icons
 5. [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Auto pairs
 6. [morhetz/gruvbox](https://github.com/morhetz/gruvbox) - Color scheme
+7. [akinsho.toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 
 ## Custom keymaps
 1. Shift+p (`<S-p>`) - Pasting from system clipboard (`"+p`)
 2. Shift+Tab (`<S-tab>`) - Toggle Nerd Tree (`:NERDTreeToggle`)
+3. Shift+t (`<S-t>`) - Toggle terminal (`:ToggleTerm`)
 &nbsp;
 
-![Neovim screenshot here](./nvim.png)
+![Neovim screenshot here](./x.png)
