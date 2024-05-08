@@ -13,7 +13,7 @@
 ## Custom keymaps
 1. Shift+p (`<S-p>`) - Pasting from system clipboard (`"+p`)
 2. Shift+Tab (`<S-tab>`) - Toggle Nerd Tree (`:NERDTreeToggle`)
-3. Shift+t (`<S-t>`) - Toggle terminal (`:ToggleTerm`)
+3. Alt+t (`<M-t>`) - Toggle terminal (`:ToggleTerm`)
 &nbsp;
 
 ![Neovim screenshot here](./x.png)
