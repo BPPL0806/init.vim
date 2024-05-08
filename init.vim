@@ -65,13 +65,13 @@ endif
 
 let mapleader = ","
 
-" Map <S-p> to paste from system clipboard
+" Map SHIFT+p to paste from system clipboard
 nnoremap <silent> <S-p> "+p
 vnoremap <silent> <S-p> "+p
 
-" Map <S-tab> to toggle NERDTree
+" Map SHIFT+TAB to toggle NERDTree
 nmap <silent> <S-tab> :NERDTreeToggle<CR>
 
-" Map <S-t> to toggle terminal
-nnoremap <silent> <S-t> :ToggleTerm <CR>
-tnoremap <silent> <S-t> <C-\><C-n>:ToggleTerm<CR>
+" Map ALT+t to toggle terminal
+nnoremap <silent> <M-t> :ToggleTerm <CR>
+tnoremap <silent> <M-t> <C-\><C-n>:ToggleTerm<CR>
