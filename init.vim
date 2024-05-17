@@ -1,42 +1,34 @@
-" Enable syntax highlighting
 syntax enable
-
-" Set relative line numbers
 set number relativenumber
-
 set encoding=UTF-8
+set hidden
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
-" Configure NERDTree
-" Open NERDTree automatically when vim starts if it's the only file
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | NERDTree | wincmd p | endif
-
-" Plugin manager: Vim-Plug
-" Install Vim-Plug if not installed
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-" Plugins
 call plug#begin('~/.config/nvim/plugged')
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'scrooloose/nerdtree'
-Plug 'jiangmiao/auto-pairs' 
+Plug 'jiangmiao/auto-pairs'
 Plug 'ryanoasis/vim-devicons'
 Plug 'morhetz/gruvbox'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'andweeb/presence.nvim'
+Plug 'romgrk/barbar.nvim'
 call plug#end()
 
-" Enable Toggleterm
-lua require("toggleterm").setup()
-set hidden
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | NERDTree | wincmd p | endif
 
-" Set gruvbox colorscheme
+lua require("lualine").setup()
+lua require("toggleterm").setup()
+lua require('gitsigns').setup()
 colorscheme gruvbox
 
-" Enable NERDTree icons
 let g:NERDTreeGitStatusIndicatorMapCustom = {
   \ "nerdtree-git-plugin": {
   \   "Unstaged": "",
@@ -51,27 +43,23 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
   \ }
 \ }
 
-" Configure autopairs
 let g:autopairs_start_ignore = '^\s*$'   " Ignore empty lines
 let g:autopairs_filetype_blacklist = ['nerdtree']  " Don't enable autopairs in NERDTree
 
-" Use KDE clipboard provider
 if has('clipboard')
     if has('unnamedplus')
         set clipboard^=unnamedplus
     endif
 endif
 
-
-let mapleader = ","
-
-" Map SHIFT+p to paste from system clipboard
 nnoremap <silent> <S-p> "+p
 vnoremap <silent> <S-p> "+p
 
-" Map SHIFT+TAB to toggle NERDTree
 nmap <silent> <S-tab> :NERDTreeToggle<CR>
 
-" Map ALT+t to toggle terminal
 nnoremap <silent> <M-t> :ToggleTerm <CR>
 tnoremap <silent> <M-t> <C-\><C-n>:ToggleTerm<CR>
+
+nnoremap <silent> <S-t> :tabnew<CR>
+nnoremap <S-Left> :tabprevious<CR>
+nnoremap <S-Right> :tabnext<CR>
