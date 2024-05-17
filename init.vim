@@ -61,5 +61,5 @@ nnoremap <silent> <M-t> :ToggleTerm <CR>
 tnoremap <silent> <M-t> <C-\><C-n>:ToggleTerm<CR>
 
 nnoremap <silent> <S-t> :tabnew<CR>
-nnoremap <S-Left> :tabprevious<CR>
-nnoremap <S-Right> :tabnext<CR>
+nnoremap <silent> <S-Right> :BufferNext<CR>
+nnoremap <silent> <S-Left> :BufferPrevious<CR>
