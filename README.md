@@ -20,8 +20,8 @@
 2. Shift+Tab (`<S-tab>`) - Toggle Nerd Tree (`:NERDTreeToggle`)
 3. Alt+t (`<M-t>`) - Toggle terminal (`:ToggleTerm`)
 4. Shift+t (`<S-t>`) - Open a new tab (`:tabnew`)
-5. Shift+Left (`<S-Left>`) - Go to previous tab (`:tabprevious`)
-6. Shift+Right (`<S-Right>`) - Go to next tab (`:tabnext`)
+5. Shift+Left (`<S-Left>`) - Go to previous tab (`:BufferPrevious`)
+6. Shift+Right (`<S-Right>`) - Go to next tab (`:BufferNext`)
 &nbsp;
 
 ![Neovim screenshot here](./screen.png)
