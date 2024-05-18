@@ -62,4 +62,9 @@ tnoremap <silent> <M-t> <C-\><C-n>:ToggleTerm<CR>
 
 nnoremap <silent> <S-t> :tabnew<CR>
 nnoremap <silent> <S-Right> :BufferNext<CR>
+nnoremap <silent> <S-l> :BufferNext<CR>
+nnoremap <silent> <S-k> :BufferNext<CR>
 nnoremap <silent> <S-Left> :BufferPrevious<CR>
+nnoremap <silent> <S-h> :BufferPrevious<CR>
+nnoremap <silent> <S-j> :BufferPrevious<CR>
+nnoremap <silent> <S-c> :BufferClose<CR>
