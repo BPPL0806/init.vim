@@ -22,6 +22,7 @@
 4. Shift + t (`<S-t>`) - Open a new tab (`:tabnew`)
 5. Shift + Left/h/j (`<S-Left>`/`<S-h>`/`<S-j>`) - Go to previous tab (`:BufferPrevious`)
 6. Shift + Right/k/l (`<S-Right>`/`<S-k>`/`<S-l>`) - Go to next tab (`:BufferNext`)
+7. Shift + c (`<S-c>`) - Close current tab (`:BufferClose`)
 &nbsp;
 
 ![Neovim screenshot here](./screen.png)
