@@ -16,12 +16,12 @@
 12. [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
 
 ## Custom keymaps
-1. Shift+p (`<S-p>`) - Pasting from system clipboard (`"+p`)
-2. Shift+Tab (`<S-tab>`) - Toggle Nerd Tree (`:NERDTreeToggle`)
-3. Alt+t (`<M-t>`) - Toggle terminal (`:ToggleTerm`)
-4. Shift+t (`<S-t>`) - Open a new tab (`:tabnew`)
-5. Shift+Left (`<S-Left>`) - Go to previous tab (`:BufferPrevious`)
-6. Shift+Right (`<S-Right>`) - Go to next tab (`:BufferNext`)
+1. Shift + p (`<S-p>`) - Pasting from system clipboard (`"+p`)
+2. Shift + Tab (`<S-tab>`) - Toggle Nerd Tree (`:NERDTreeToggle`)
+3. Alt + t (`<M-t>`) - Toggle terminal (`:ToggleTerm`)
+4. Shift + t (`<S-t>`) - Open a new tab (`:tabnew`)
+5. Shift + Left/h/j (`<S-Left>`/`<S-h>`/`<S-j>`) - Go to previous tab (`:BufferPrevious`)
+6. Shift + Right/k/l (`<S-Right>`/`<S-k>`/`<S-l>`) - Go to next tab (`:BufferNext`)
 &nbsp;
 
 ![Neovim screenshot here](./screen.png)
