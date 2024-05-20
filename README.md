@@ -14,6 +14,7 @@
 10. [Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
 11. [andweeb/presence.nvim](https://github.com/andweeb/presence.nvim)
 12. [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
+13. [Exafunction/codeium.vim](https://github.com/Exafunction/codeium.vim)
 
 ## Custom keymaps
 1. Shift + p (`<S-p>`) - Pasting from system clipboard (`"+p`)
@@ -23,6 +24,8 @@
 5. Shift + Left/h/j (`<S-Left>`/`<S-h>`/`<S-j>`) - Go to previous tab (`:BufferPrevious`)
 6. Shift + Right/k/l (`<S-Right>`/`<S-k>`/`<S-l>`) - Go to next tab (`:BufferNext`)
 7. Shift + c (`<S-c>`) - Close current tab (`:BufferClose`)
+8. Alt + m (`<A-m>`) - Next codeium suggestion (`codeium#CycleCompletions(1)`)
+9. Alt + n (`<A-n>`) - Previous codeium suggestion (`codeium#CycleCompletions(-1)`)
 &nbsp;
 
 ![Neovim screenshot here](./screen.png)
