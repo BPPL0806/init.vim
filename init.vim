@@ -7,7 +7,6 @@ set shiftwidth=4
 set expandtab
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'Exafunction/codeium.vim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
@@ -69,6 +68,3 @@ nnoremap <silent> <S-Left> :BufferPrevious<CR>
 nnoremap <silent> <S-h> :BufferPrevious<CR>
 nnoremap <silent> <S-j> :BufferPrevious<CR>
 nnoremap <silent> <S-c> :BufferClose<CR>
-
-nnoremap <silent> <A-m> codeium#CycleCompletions(1)<CR>
-nnoremap <silent> <A-n> codeium#CycleCompletions(-1)<CR>
